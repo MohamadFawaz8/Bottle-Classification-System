@@ -65,10 +65,6 @@ Bottle Classification System/
 |-- capacity.pt
 |-- deformity.pt
 |-- fullness.pt
-|-- annotated_video.mp4
-|-- .mpl_config/
-|-- .yolo_config/
-`-- __pycache__/
 ```
 
 ## Requirements
@@ -239,11 +235,9 @@ Recommended fixes:
 - The repository contains large binary assets, including three model files of about 44 MB each.
 - The sample `annotated_video.mp4` file is also included and is about 22 MB.
 - These files are below GitHub's 100 MB per-file limit, so they can be pushed normally.
-- Cache folders such as `__pycache__`, `.mpl_config`, and `.yolo_config` are better excluded with a future `.gitignore`.
 
 ## Future Improvements
 
-- Add a `.gitignore` for cache files and generated outputs
 - Pin exact dependency versions for reproducible model loading
 - Add automated tests for GUI-independent pipeline behavior
 - Add packaging instructions for distributing the desktop app
